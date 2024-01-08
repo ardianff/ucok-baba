@@ -2,13 +2,13 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
-    @include('includes.styles')
+    @include('includes.guest.styles')
     @stack('addon-styles')
 </head>
 
 <body>
     @yield('content')
-    @include('includes.scripts')
+    @include('includes.guest.scripts')
 
     @stack('addon-scripts')
 </body>
